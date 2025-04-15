@@ -1,2 +1,40 @@
-<h1>Hello World!</h1>
-<p>这是我的个人网站。</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">个人介绍</a></li>
+                <li><a href="#diary">个人日记本</a></li>
+            </ul>
+            <button id="theme-toggle">夜间模式</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>个人介绍</h2>
+            <p>这里是你的个人介绍内容，你可以详细描述自己的经历、技能、兴趣爱好等。</p>
+        </section>
+
+        <section id="diary">
+            <h2>个人日记本</h2>
+            <div id="diary-entries">
+                <!-- 日记条目将动态添加到这里 -->
+            </div>
+            <form id="diary-form">
+                <textarea id="diary-content" placeholder="写下你的日记..."></textarea>
+                <button type="submit">添加日记</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
